@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+<p>
+примерчик из книги для особо Одаренных. где надо было вводить<br>
+номер телефона, менять цвет используя стили.<br>
+добавил поле инпут и вывожу как тескт. столкнулся с проблемой<br>
+с регулярнымы выражениями. по книге они принимали цифвры с дефисом<br>
+и матчили их. через поле ипут они этого не делают.<br>
+<p>
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Planets</title>
+    <style>
+    .redtext {
+        color: red;
+    }
+    </style>
+    <script>
+    function init() {
+        var planet = document.getElementById("greenplanet");
+        console.log(planet);
+        planet.innerHTML = "Red Alert: hit by phaser fire!";
+        planet.setAttribute("class", "redtext");
+    }
+    window.onload = init;
+    </script>
+</head>
+
+<body>
+    <h1>Green Planet</h1>
+    <button id="bstart">Start</button>
+    <button id="bclear">Bclear</button>
+    <button id="bwhotxt">Sow some text</button>
+    
+    <p id="greenplanet">All is well</p>
+    
+    <h3>Red Planet</h3>
+    <p id="redplanet">Nothing to report</p>
+    
+    <h3>Blue Planet</h3>
+    <p id="blueplanet">All systems A-OK</p>
+    
+    <h4>Типы и их значения</h4>
+    Введите текст, можно html: <input type="text" id="inner">
+
+    <p id="PoutTxt"></p>
+
+
+
+    <script src="planet.js"></script>
+</body>
+
+</html>
